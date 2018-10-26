@@ -1,0 +1,170 @@
+.container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* header start */
+header {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(36, 41, 44);
+  color: rgb(255, 255, 255);
+  font-family: "YouYuan";
+}
+
+.hd_logo {
+  width: 200px;
+  height: 100%;
+  background: url("../img/logo.png") no-repeat;
+  background-position: 0 center;
+  float: left;
+  position: relative;
+}
+
+.hd_logo_top {
+  font-size: 25px;
+  margin: 25px 0 5px 70px;
+  letter-spacing: 16px;
+  /* border-bottom: 1px solid rgb( 255, 255, 255 ); */
+}
+
+.hd_logo_top::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 71px;
+  width: 105px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.hd_logo_bottom {
+  font-size: 12px;
+  margin-left: 70px;
+}
+
+.hd_menu {
+  width: 1000px;
+  height: 100%;
+  float: right;
+}
+
+.hd_menu>ul {
+  float: left;
+  padding-left: 10px;
+}
+
+.hd_menu>ul>li {
+  float: left;
+  height: 100%;
+  margin-right: 20px;
+  line-height: 90px;
+  position: relative;
+}
+
+.hd_menu>ul>li>a {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: rgb(255, 255, 255);
+  padding: 2px 5px;
+}
+
+.hd_menu>ul>li>a:hover {
+  color: rgb(16, 157, 89);
+}
+
+.hd_menu>ul>li .active {
+  background-color: rgb(16, 157, 89);
+  border-radius: 3px;
+}
+
+.hd_triangle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgb(242, 242, 242);
+  margin-left: -10px;
+}
+
+.hd_right {
+  float: right;
+  height: 100%;
+  /* display: table-cell;
+  vertical-align: middle; */
+}
+
+.hd_right>div {
+  float: left;
+}
+
+.search {
+  font-size: 14px;
+  /* line-height: 90px; */
+  margin-top: 30px;
+  position: relative;
+}
+
+.search>input {
+  height: 30px;
+  width: 140px;
+  outline-style: none;
+  border-radius: 15px 0 0 15px;
+  padding-left: 10px;
+  color: rgb(16, 157, 89);
+  overflow: hidden;
+  margin-right: 30px;
+  background-color: black;
+}
+
+.search_logo {
+  display: inline-block;
+  background-color: rgb(16, 157, 89);
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 0 15px 15px 0 ;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.search_logo>img{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.hd_right>div:nth-child(2),
+.hd_right>div:nth-child(3) {
+  margin-left: 20px;
+  line-height: 90px;
+}
+
+.hd_right>div>a {
+  color: rgb(255, 255, 255);
+}
+
+.hd_right>div>a:hover {
+  color: rgb(16, 157, 89);
+}
+
+/* header end */
+
+/* carousel start */
+.carousel{
+  width: 100%;
+  height: 500px;
+}
+
+.carousel_swiper{
+  
+}
+
+
+/* carousel end */
