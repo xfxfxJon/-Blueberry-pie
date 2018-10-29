@@ -2,16 +2,16 @@
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-  }
-  
-  .swiper_movement,
-  .swiper_interesting,
-  .swiper_chat,
-  .swiper_travel {
+}
+
+.swiper_movement,
+.swiper_interesting,
+.swiper_chat,
+.swiper_travel {
     padding-bottom: 60px;
-  }
-  
-  .my_bullet {
+}
+
+.my_bullet {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -19,39 +19,39 @@
     opacity: .2;
     background: #000;
     margin: 0 4px;
-  }
-  
-  .my_bullet_active {
+}
+
+.my_bullet_active {
     background: #52c58c;
     opacity: 1;
-  }
-  
-  /* header start */
-  header {
+}
+
+/* header start */
+header {
     width: 100%;
     height: 90px;
     background-color: rgb(36, 41, 44);
     color: rgb(255, 255, 255);
     font-family: "YouYuan";
-  }
-  
-  .hd_logo {
+}
+
+.hd_logo {
     width: 200px;
     height: 100%;
     background: url("../img/logo.png") no-repeat;
     background-position: 0 center;
     float: left;
     position: relative;
-  }
-  
-  .hd_logo_top {
+}
+
+.hd_logo_top {
     font-size: 25px;
     margin: 25px 0 5px 70px;
     letter-spacing: 16px;
     /* border-bottom: 1px solid rgb( 255, 255, 255 ); */
-  }
-  
-  .hd_logo_top::after {
+}
+
+.hd_logo_top::after {
     content: "";
     display: block;
     position: absolute;
@@ -60,49 +60,53 @@
     width: 105px;
     height: 1px;
     background-color: rgb(255, 255, 255);
-  }
-  
-  .hd_logo_bottom {
+}
+
+.hd_logo_bottom {
     font-size: 12px;
     margin-left: 70px;
-  }
-  
-  .hd_menu {
+}
+
+.hd_menu {
     width: 1000px;
     height: 100%;
     float: right;
-  }
-  
-  .hd_menu>ul {
+}
+
+.hd_menu>ul {
     float: left;
     padding-left: 10px;
-  }
-  
-  .hd_menu>ul>li {
+}
+
+.hd_menu>ul>li {
     float: left;
     height: 100%;
     margin-right: 20px;
     line-height: 90px;
     position: relative;
-  }
-  
-  .hd_menu>ul>li>a {
+}
+
+.hd_menu>ul>li>a {
     font-size: 14px;
     font-family: "Microsoft YaHei";
     color: rgb(255, 255, 255);
     padding: 2px 5px;
-  }
-  
-  .hd_menu>ul>li>a:hover {
+}
+
+.hd_menu>ul>li>a:hover {
     color: rgb(16, 157, 89);
-  }
-  
-  .hd_menu>ul>li .active {
+}
+
+.hd_menu>ul>li .active {
     background-color: rgb(16, 157, 89);
     border-radius: 3px;
-  }
-  
-  .hd_triangle {
+}
+
+.hd_menu>ul>li>.active:hover {
+    color: #fff;
+}
+
+.hd_triangle {
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -112,27 +116,27 @@
     border-style: solid;
     border-color: transparent transparent rgb(242, 242, 242);
     margin-left: -10px;
-  }
-  
-  .hd_right {
+}
+
+.hd_right {
     float: right;
     height: 100%;
     /* display: table-cell;
     vertical-align: middle; */
-  }
-  
-  .hd_right>div {
+}
+
+.hd_right>div {
     float: left;
-  }
-  
-  .search {
+}
+
+.search {
     font-size: 14px;
     /* line-height: 90px; */
     margin-top: 30px;
     position: relative;
-  }
-  
-  .search>input {
+}
+
+.search>input {
     height: 30px;
     width: 140px;
     outline-style: none;
@@ -142,9 +146,9 @@
     overflow: hidden;
     margin-right: 30px;
     background-color: black;
-  }
-  
-  .search_logo {
+}
+
+.search_logo {
     display: inline-block;
     background-color: rgb(16, 157, 89);
     position: absolute;
@@ -154,121 +158,121 @@
     top: 0;
     right: 0;
     cursor: pointer;
-  }
-  
-  .search_logo :hover{
+}
+
+.search_logo :hover {
     opacity: .6;
-  }
-  
-  .search_logo>img {
+}
+
+.search_logo>img {
     position: absolute;
     top: 5px;
     left: 5px;
-  }
-  
-  .hd_right>div:nth-child(2),
-  .hd_right>div:nth-child(3) {
+}
+
+.hd_right>div:nth-child(2),
+.hd_right>div:nth-child(3) {
     margin-left: 20px;
     line-height: 90px;
-  }
-  
-  .hd_right>div>a {
-    color: rgb(255, 255, 255);
-  }
-  
-  .hd_right>div>a:hover {
-    color: rgb(16, 157, 89);
-  }
-  
-  /* header end */
+}
 
-  /* footer start */
+.hd_right>div>a {
+    color: rgb(255, 255, 255);
+}
+
+.hd_right>div>a:hover {
+    color: rgb(16, 157, 89);
+}
+
+/* header end */
+
+/* footer start */
 footer {
     overflow: hidden;
-  }
-  
-  .footer_left {
+}
+
+.footer_left {
     float: left;
     width: 48%;
-  }
-  
-  .footer_left h6 {
+}
+
+.footer_left h6 {
     margin: 10px 0 5px 0;
     font-size: 14px;
     font-weight: normal;
-  }
-  
-  .footer_left>a {
+}
+
+.footer_left>a {
     color: #808080;
     margin: 4px 3px 0 0;
     font-size: 14px;
     display: inline-block;
-  }
-  
-  .footer_right {
+}
+
+.footer_right {
     float: right;
     width: 530px;
     margin-top: 16px;
-  }
-  
-  .footer_right>div {
+}
+
+.footer_right>div {
     float: left;
     margin: 0 3px;
-  }
-  
-  .footer_right .content {
+}
+
+.footer_right .content {
     float: right;
     width: 62%;
     font-size: 12px;
     color: #707070;
-  }
-  
-  .footer_right .content>p {
+}
+
+.footer_right .content>p {
     margin-bottom: 7px;
-  }
-  
-  .weibo p,
-  .weichat p {
+}
+
+.weibo p,
+.weichat p {
     color: #808080;
     font-size: 12px;
     text-align: center;
-  }
-  
-  /* footer end */
-  
-  /* bottom start */
-  .bottom {
+}
+
+/* footer end */
+
+/* bottom start */
+.bottom {
     margin-top: 20px;
     width: 100%;
     height: 100px;
     border-top: 1px solid #e6e6e6;
-  }
-  
-  .bottom_center {
+}
+
+.bottom_center {
     width: 400px;
     height: 80px;
     margin: 20px auto 0;
     overflow: hidden;
-  }
-  
-  .bottom_center>span {
+}
+
+.bottom_center>span {
     width: 20%;
     text-align: center;
     display: block;
     float: left;
     font-size: 14px;
     color: #4c4c4c;
-  }
-  
-  .bottom_center>p {
+}
+
+.bottom_center>p {
     margin: 25px auto 0;
     text-align: center;
     font-size: 12px;
     color: #999999;
-  }
-  
-  .bottom_center>p>span {
+}
+
+.bottom_center>p>span {
     margin: 0 10px;
-  }
-  
-  /* bottom end */
+}
+
+/* bottom end */

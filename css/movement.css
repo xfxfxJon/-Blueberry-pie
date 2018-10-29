@@ -1,0 +1,155 @@
+.home {
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+}
+
+/* player start */
+.player {
+    margin-top: 60px;
+    width: 100%;
+    height: 467px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1.732px 4px 0px rgba(17, 5, 9, .5); */
+    /* padding: 0 35px; */
+    /* box-sizing: border-box; */
+}
+
+.player_title {
+    height: 70px;
+}
+
+.player_title_left {
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    line-height: 70px;
+    float: left;
+}
+
+.player_title_right {
+    margin-right: 35px;
+    float: right;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    line-height: 70px;
+    color: #808080;
+}
+
+.player_title_right span {
+    color: rgb(16, 157, 89);
+}
+
+.player_img {
+    width: 1120px;
+    height: 255px;
+    background: url("../img/player_title_bg.png") no-repeat;
+    padding: 40px;
+
+}
+
+.player_cover {
+    width: 245px;
+    height: 245px;
+    border: 2px solid #fff;
+    float: left;
+}
+
+.player_img p {
+    float: right;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(255, 255, 255);
+    line-height: 1.625;
+    width: 830px;
+    height: 249px;
+}
+
+/* player end */
+
+/* home content start */
+
+.home_content {
+    margin-top: 20px;
+}
+
+
+/* home_left start */
+.home_left {
+    width: 820px;
+    /* height: 1000px; */
+    float: left;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1.732px 4px 0px rgb( 17, 5, 9 ); */
+    padding: 0 25px;
+}
+
+.home_left_title{
+    color: #808080;
+}
+
+.home_left_title h3 {
+    font-size: 22px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    margin-top: 45px;
+    text-align: center;
+}
+
+.home_left_title_bottom{
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid #808080;
+}
+
+.home_left_title_bottom .left{
+    float: left;
+}
+
+.home_left_title_bottom .right{
+    float: right;
+}
+
+.view{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.view img{
+    width: 14px;
+}
+.chat{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+}
+.chat img{
+    width: 14px;
+}
+
+.home_left_content{
+    margin-top: 20px;
+}
+
+.home_left_content p{
+    font-size: 14px;
+    color: #808080;
+}
+
+.home_left_content img{
+    width: 100%;
+    height: 355px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* home_left end */
+
+
+/* home content end */
