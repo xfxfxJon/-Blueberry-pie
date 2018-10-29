@@ -9,6 +9,8 @@ $(document).ready(function () {
             speed: 500,
             pagination: {
                 el: '.carousel_pagination',
+                bulletClass : 'my_bullet',
+                bulletActiveClass: 'my_bullet_active',
             },
             loop: true,
             on: {
@@ -37,6 +39,8 @@ $(document).ready(function () {
             speed: 500,
             pagination: {
                 el: '.movement_pagination',
+                bulletClass : 'my_bullet',
+                bulletActiveClass: 'my_bullet_active',
             },
             loop: true,
         });
@@ -55,6 +59,8 @@ $(document).ready(function () {
             speed: 500,
             pagination: {
                 el: '.instersting_pagination',
+                bulletClass : 'my_bullet',
+                bulletActiveClass: 'my_bullet_active',
             },
             loop: true,
         });
@@ -72,6 +78,8 @@ $(document).ready(function () {
             speed: 500,
             pagination: {
                 el: '.chat_pagination',
+                bulletClass : 'my_bullet',
+                bulletActiveClass: 'my_bullet_active',
             },
             loop: true,
         });
@@ -88,6 +96,8 @@ $(document).ready(function () {
             speed: 500,
             pagination: {
                 el: '.travel_pagination',
+                bulletClass : 'my_bullet',
+                bulletActiveClass: 'my_bullet_active',
             },
             loop: true,
         });

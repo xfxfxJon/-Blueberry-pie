@@ -4,6 +4,25 @@
   margin: 0 auto;
 }
 
+.swiper_movement,.swiper_instersting,.swiper_chat,.swiper_travel{
+  padding-bottom: 40px;
+}
+
+.my_bullet{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  opacity: .2;
+  background: #000;
+  margin: 0 4px;
+}
+
+.my_bullet_active{
+  background: #52c58c;
+  opacity: 1;
+}
+
 /* header start */
 header {
   width: 100%;
