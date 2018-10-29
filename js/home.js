@@ -45,7 +45,7 @@ $(document).ready(function () {
             loop: true,
         });
     }
-    getMovement();
+    // getMovement();
 
 
 
