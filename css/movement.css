@@ -15,6 +15,64 @@
     /* box-sizing: border-box; */
 }
 
+#myAudio {
+    display: none;
+}
+
+.player_my {
+    margin-top: 10px;
+}
+
+.player_my>div {
+    float: left;
+}
+
+.start {
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 35px;
+    margin: 0 15px 0 40px;
+    position: relative;
+}
+
+.start img {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -7.5px;
+}
+
+.start_time,
+.end_time {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 153, 153);
+    line-height: 35px;
+}
+
+.progress_my {
+    width: 940px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgb(211, 237, 224);
+    margin: 15px 20px 0;
+    overflow: hidden;
+}
+
+.progress_my_up {
+    width: 0%;
+    height: 8px;
+    background: #109d59;
+}
+
+
+
 .player_title {
     height: 70px;
 }
@@ -27,6 +85,14 @@
     font-weight: bold;
     line-height: 70px;
     float: left;
+}
+
+.headset {
+    display: inline-block;
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/headset.png") no-repeat;
 }
 
 .player_title_right {
@@ -83,11 +149,11 @@
     float: left;
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
-    /* box-shadow: 1px 1.732px 4px 0px rgb( 17, 5, 9 ); */
+    /* box-shadow: 1px 1.732px 4px 0px rgb(17, 5, 9); */
     padding: 0 25px;
 }
 
-.home_left_title{
+.home_left_title {
     color: #808080;
 }
 
@@ -99,53 +165,557 @@
     text-align: center;
 }
 
-.home_left_title_bottom{
+.home_left_title_bottom {
     overflow: hidden;
     padding: 10px 0;
     border-bottom: 1px solid #808080;
 }
 
-.home_left_title_bottom .left{
+.home_left_title_bottom .left {
     float: left;
 }
 
-.home_left_title_bottom .right{
+.home_left_title_bottom .right {
     float: right;
 }
 
-.view{
+.view {
     display: inline-block;
     width: 14px;
     height: 14px;
 }
-.view img{
+
+.view img {
     width: 14px;
 }
-.chat{
+
+.chat {
     display: inline-block;
     width: 14px;
     height: 14px;
     margin-left: 10px;
 }
-.chat img{
+
+.chat img {
     width: 14px;
 }
 
-.home_left_content{
+.home_left {
+    margin-bottom: 125px;
+}
+
+.home_left_content {
     margin-top: 20px;
 }
 
-.home_left_content p{
+.home_left_content pre {
     font-size: 14px;
+    color: #808080;
+    line-height: 30px;
+}
+
+.home_left_content>img {
+    width: 100%;
+    height: 355px;
+    margin: 15px 0;
+}
+
+.tab {
+    margin-bottom: 20px;
+}
+
+.tab span {
+    display: inline-block;
+    padding: 2px 5px;
+    background: rgb(153, 153, 153);
+    border-radius: 11px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+.label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+
+.label img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.home_right_end {
+    width: 70px;
+    margin: 20px auto 50px;
+    text-align: center;
+    position: relative;
+}
+
+.home_right_end::before,
+.home_right_end::after {
+    content: "";
+    display: block;
+    background-color: rgb(52, 73, 94);
+    width: 1px;
+    height: 30px;
+    transform: rotate(45deg);
+    position: relative;
+    left: 30px;
+}
+
+.end {
+    width: 52px;
+    height: 20px;
+    background: url("../img/end.png") no-repeat;
+    margin: 5px auto 0;
+}
+
+
+.relevant {
+    overflow: hidden;
+}
+
+
+.relevant_title {
+    height: 35px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.relevant_title h3 {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(77, 77, 77);
+    line-height: 1.5;
+}
+
+.relevant_img a {
+    float: left;
+    width: 390px;
+    margin: 20px 10px 10px;
     color: #808080;
 }
 
-.home_left_content img{
+.relevant_img a img {
     width: 100%;
-    height: 355px;
-    margin-bottom: 15px;
 }
 
+.relevant_img>a>p {
+    margin-top: 10px;
+}
+
+.share {
+    clear: both;
+    margin-top: 45px;
+    /* overflow: hidden; */
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.share::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.share_top_left {
+    float: left;
+    margin-left: 10px;
+}
+
+.share_top_right {
+    float: right;
+    margin-right: 10px;
+}
+
+.share_top_right>span {
+    line-height: 40px;
+    padding: 13px 17px;
+    margin-left: 10px;
+}
+
+.share_weibo {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(20, 171, 209);
+    line-height: 40px;
+    border-radius: 21px;
+    background-color: rgb(229, 242, 245);
+}
+
+.share_zan,
+.share_collection {
+    border: 1px solid rgb(139, 143, 141);
+    border-radius: 21px;
+}
+
+.share_zan img {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -1px;
+}
+
+.share_collection img {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -1px;
+}
+
+.share_top_left p,
+.share_top_right p {
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 153, 153);
+}
+
+.share_top_right p {
+    text-align: right;
+}
+
+.praise_title {
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    line-height: 1.714;
+    padding-left: 10px;
+    border-left: 5px solid rgb(246, 131, 68);
+    margin: 15px 0;
+}
+
+.praise_imgs::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.praise_imgs a {
+    float: left;
+    margin-right: 15px;
+}
+
+.praise_imgs a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.praise_imgs a p {
+    text-align: center;
+}
+
+.praise_bg {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.praise_bg img {
+    width: 100%;
+}
+
+.current_comment {
+    width: 100%;
+    height: 115px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(250, 250, 250);
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(179, 179, 179);
+    outline: none;
+}
+
+.comment_button {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.comment_button button {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 4px;
+    background-color: rgb(246, 131, 68);
+    /* box-shadow: 0px 1px 0px 0px rgb(191, 77, 15); */
+}
+
+.comments {
+    padding-bottom: 50px;
+}
+
+.comments_item{
+    margin-bottom: 10px;
+}
+
+.comments_author>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comments_author_name {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    line-height: 2.5;
+    padding-left: 10px;
+}
+
+.comments_time {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 153, 153);
+    line-height: 1.681;
+}
+
+.comments_content {
+    margin-left: 62px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(102, 102, 102);
+    line-height: 1.857;
+}
+
+.comments_other {
+    text-align: right;
+    font-family: "Arial";
+    color: rgb(204, 204, 204);
+    line-height: 2.857;
+}
+
+.comments_zan,
+.comments_chat {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-right: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.discuss {
+    background-color: rgb(250, 250, 250);
+    position: relative;
+    width: 100%;
+    height: 110px;
+    border: 1px solid rgb(230, 230, 230);
+    z-index: 3;
+    display: none;
+}
+
+.discuss_big {
+    width: 0;
+    height: 0;
+    border-width: 12px 7px;
+    border-style: solid;
+    border-color: transparent transparent rgb(230, 230, 230);
+    position: absolute;
+    top: -24px;
+    right: 18px;
+    /* z-index: 2; */
+}
+
+.discuss_small {
+    width: 0;
+    height: 0;
+    border-width: 10px 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(250, 250, 250);
+    /* border-color: transparent transparent red; */
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.discuss input[type='text'] {
+    border: 1px solid rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
+    width: 629px;
+    height: 35px;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 0 10px;
+}
+
+.discuss button {
+    border-radius: 4px;
+    background-color: rgb(246, 131, 68);
+    width: 81px;
+    height: 37px;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.home_right {
+    float: right;
+    width: 300px;
+}
+
+.home_summary {
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1.732px 4px 0px rgb(17, 5, 9); */
+    width: 100%;
+    height: 361px;
+    overflow: hidden;
+    position: relative;
+}
+
+.home_summary .logo {
+    margin: 40px 20px 20px;
+    background-color: rgb(250, 250, 250);
+    width: 260px;
+    height: 80px;
+}
+
+.home_summary .logo span {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.count_num>div {
+    background-color: rgb(250, 250, 250);
+    width: 82px;
+    height: 60px;
+    float: left;
+    margin-right: 7px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    line-height: 1.571;
+    text-align: center;
+}
+
+.count_num>div:nth-child(1) {
+    margin-left: 20px;
+}
+
+.count_num>div>p:nth-child(1) {
+    margin-top: 10px;
+}
+
+.summary_img {
+    background-color: rgb(250, 250, 250);
+    width: 300px;
+    height: 122px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.summary_img>a {
+    float: left;
+    width: 60px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 153, 153);
+}
+
+.summary_img>a:nth-child(1) {
+    margin-left: 50px;
+}
+
+.summary_img>a:nth-child(2) {
+    float: right;
+    margin-right: 50px;
+}
+
+.summary_img a p {
+    margin-top: 10px;
+}
+
+
+.author_other,
+.hot {
+    /* overflow: hidden; */
+    width: 270px;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1.732px 4px 0px rgb(17, 5, 9); */
+    /* height: 210px; */
+    padding: 0 15px 20px;
+}
+
+.author_other .title,
+.hot .title {
+    position: relative;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.author_other .title h3,
+.hot .title h3 {
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: rgb(51, 51, 51);
+    line-height: 50px;
+    /* font-weight: normal; */
+}
+
+.author_other .title span,
+.hot .title span {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 153, 153);
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.articles ul li a {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(128, 128, 128);
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 250px;
+    display: inline-block;
+}
+
+.articles ul li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.hot .articles ul li a span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    /* background-color: rgb( 16, 157, 89 ); */
+    margin-right: 15px;
+    background-color: rgb(204, 204, 204);
+    position: relative;
+    top: -2px
+}
+
+.articles ul li:hover a {
+    color: rgb(16, 157, 89);
+}
+
+.articles ul li:hover a span {
+    background-color: rgb(16, 157, 89);
+}
 
 
 
