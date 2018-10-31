@@ -119,7 +119,7 @@ $(document).ready(function () {
             // console.log(res);
             if (res.success) {
                 var data = res.listening;
-                for (var i = 0; i < data.length - 1; i++) {
+                for (var i = 0; i < data.length; i++) {
                     data[i].img = data[i].img.replace(/iwen.wiki/, "wwtliu.com");
                     $(".item_pic:eq(" + i + ") img").attr("src", data[i].img);
                     $(".item_content:eq(" + i + ") p:eq(0)").html(data[i].title);
