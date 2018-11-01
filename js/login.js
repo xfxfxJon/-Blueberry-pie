@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     var isLogin = true;
     // 登录API
     function getLogin(userName, password, verification_code) {
@@ -10,6 +10,9 @@ $(document).ready(function () {
             },
             function (res) {
                 console.log(res);
+                if(res.success){
+                    window.location.href = "index.html";
+                }
             });
     }
 
@@ -19,8 +22,11 @@ $(document).ready(function () {
         var userName = $("#userName").val();
         var password = $("#password").val();
         var verification_code = $("#verification_code").val();
+        var rePass = $("#rePass").val();
         if (isLogin) {
             getLogin(userName, password, verification_code);
+        }else{
+            // register(userName, password, verification_code, rePass);
         }
     }
 

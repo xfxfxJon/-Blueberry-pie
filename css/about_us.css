@@ -1,0 +1,122 @@
+.home {
+    background-color: rgb(245, 245, 245);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.box {
+    padding-top: 1px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1.732px 4px 0px rgb( 17, 5, 9 ); */
+    width: 738px;
+    height: 1260px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    width: 390px;
+    height: 100px;
+    margin: 40px 180px;
+}
+
+.title>div {
+    float: left;
+}
+
+.title_img {
+    width: 110px;
+    height: 114px;
+    background: url("../img/logo_green.png") no-repeat;
+    background-position: center;
+}
+
+.title_content_top {
+    font-size: 42.359px;
+    font-family: "YouYuan";
+    color: rgb(36, 41, 44);
+    margin-top: 13px;
+    letter-spacing: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.title_content_top::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 180px;
+    background: rgb(36, 41, 44);
+    position: absolute;
+    bottom: 7px;
+}
+
+
+.title_content_bottom {
+    font-size: 20px;
+    font-family: "YouYuan";
+    color: rgb(36, 41, 44);
+}
+
+
+.content {
+    border-top: 1px solid rgb(206, 206, 206);
+}
+
+.content_hello {
+    width: 260px;
+    height: 75px;
+    background: url("../img/hello.png") no-repeat;
+    background-position: center;
+    margin: 20px auto;
+}
+
+.content_main {
+    padding: 0 20px 100px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: #808080;
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.edge {
+    width: 130px;
+    position: absolute;
+    left: -130px;
+    top: 181px;
+}
+
+.edge>div {
+    width: 130px;
+    height: 48px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(255, 255, 255);
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.edge>div:nth-child(1) {
+    background-color: rgb(255, 211, 114);
+}
+
+.edge>div:nth-child(2) {
+    background-color: rgb(255, 141, 86);
+}
+
+.edge>div:nth-child(3) {
+    background-color: rgb(235, 76, 106);
+}
+
+.edge>div:nth-child(4) {
+    background-color: rgb(167, 72, 174);
+}
+
+.edge>div:nth-child(5) {
+    background-color: rgb(71, 212, 230);
+}

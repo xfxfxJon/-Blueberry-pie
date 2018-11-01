@@ -269,6 +269,14 @@ footer {
     color: #4c4c4c;
 }
 
+.bottom_center>span a {
+    color: #4c4c4c;
+}
+
+.bottom_center>span a:hover {
+    color: rgb(16, 157, 89);
+}
+
 .bottom_center>p {
     margin: 25px auto 0;
     text-align: center;
