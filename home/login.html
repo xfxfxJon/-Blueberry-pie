@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
-    <title>听说</title>
+    <title>登录</title>
     <meta name="description" content="蓝莓派">
     <meta name="keywords" content="蓝莓派">
     <link rel="icon" href="../img/favicon.png">
@@ -14,9 +14,49 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/login.js"></script>
+    <script src="../js/common.js"></script>
 </head>
 
 <body>
+    <!-- modal start -->
+    <div class="modal">
+        <form>
+            <div class="close_btn">×</div>
+            <div class="fun_btn">
+                <div class="not_current current">登&nbsp;&nbsp;录</div>
+                <div class="not_current">注&nbsp;&nbsp;册</div>
+            </div>
+            <div class="userName">
+                <input type="text" name="userName" id="userName" placeholder="用户账号">
+            </div>
+            <div class="password">
+                <input type="password" name="password" id="password" placeholder="账号密码">
+            </div>
+            <div class="rePass">
+                <input type="text" name="rePass" id="rePass" placeholder="请确认密码">
+            </div>
+            <div class="verification">
+                <input type="text" class="verification_code" id="verification_code" placeholder="验证码">
+                <div class="verification_icon">
+                    <img src="../img/verification.png" alt="">
+                </div>
+            </div>
+            <div class="login">
+                <input type="button" value="登录">
+            </div>
+            <div class="other">
+                <p>你还可以用第三方登录</p>
+                <div class="other_img">
+                    <img src="../img/login_other_gray.png" alt="">
+                </div>
+                <p>
+                    <a href="#" class="my_register">忘记密码?</a>
+                </p>
+            </div>
+
+        </form>
+    </div>
+    <!-- modal end -->
     <!-- header start -->
     <header>
         <div class="container">
@@ -61,16 +101,16 @@
                 <div class="not_current">注&nbsp;&nbsp;册</div>
             </div>
             <div class="userName">
-                <input type="text" name="userName" id="userName" placeholder="用户账号">
+                <input type="text" name="userName" id="userName_for" placeholder="用户账号">
             </div>
             <div class="password">
-                <input type="password" name="password" id="password" placeholder="账号密码">
+                <input type="password" name="password" id="password_for" placeholder="账号密码">
             </div>
             <div class="rePass">
-                <input type="text" name="rePass" id="rePass" placeholder="请确认密码">
+                <input type="text" name="rePass" id="rePass_for" placeholder="请确认密码">
             </div>
             <div class="verification">
-                <input type="text" class="verification_code" id="verification_code" placeholder="验证码">
+                <input type="text" class="verification_code" id="verification_code_for" placeholder="验证码">
                 <div class="verification_icon">
                     <img src="../img/verification.png" alt="">
                 </div>

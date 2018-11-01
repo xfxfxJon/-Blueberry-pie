@@ -19,10 +19,10 @@ $(document).ready(function () {
 
     // 登录事件
     function login() {
-        var userName = $("#userName").val();
-        var password = $("#password").val();
-        var verification_code = $("#verification_code").val();
-        var rePass = $("#rePass").val();
+        var userName = $("#userName_for").val();
+        var password = $("#password_for").val();
+        var verification_code = $("#verification_code_for").val();
+        var rePass = $("#rePass_for").val();
         if (isLogin) {
             getLogin(userName, password, verification_code);
         }else{
