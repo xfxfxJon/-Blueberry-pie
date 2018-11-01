@@ -309,7 +309,7 @@ footer {
     display: none;
 }
 
-form {
+.modal form {
     border-radius: 3px;
     background-color: #fff;
     width: 340px;
@@ -321,29 +321,29 @@ form {
 }
 
 
-.rePass {
+.modal .rePass {
     display: none;
 }
 
-.fun_btn {
+.modal .fun_btn {
     margin-bottom: 15px;
 }
 
-.fun_btn::after {
+.modal .fun_btn::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.fun_btn>div:first-child {
+.modal .fun_btn>div:first-child {
     float: left;
 }
 
-.fun_btn>div:last-child {
+.modal .fun_btn>div:last-child {
     float: right;
 }
 
-.fun_btn .current {
+.modal .fun_btn .current {
     background-color: rgb(255, 255, 255);
     width: 144px;
     height: 40px;
@@ -352,10 +352,10 @@ form {
     color: rgb(0, 0, 0);
     text-align: center;
     line-height: 40px;
-    border: 1px solid rgb( 215, 215, 215 );
+    border: 1px solid rgb(215, 215, 215);
 }
 
-.fun_btn .current::after {
+.modal .fun_btn .current::after {
     content: "";
     display: block;
     position: absolute;
@@ -368,7 +368,7 @@ form {
     margin-left: -10px;
 }
 
-.fun_btn .current::before {
+.modal .fun_btn .current::before {
     content: "";
     display: block;
     position: absolute;
@@ -376,12 +376,12 @@ form {
     height: 0;
     width: 0;
     border: 10px solid;
-    border-color: rgb( 215, 215, 215 ) transparent transparent;
+    border-color: rgb(215, 215, 215) transparent transparent;
     left: 50%;
     margin-left: -10px;
 }
 
-.not_current {
+.modal .not_current {
     background-color: rgb(230, 94, 66);
     width: 144px;
     height: 40px;
@@ -395,14 +395,14 @@ form {
     cursor: pointer;
 }
 
-.userName {
+.modal .userName {
     clear: both;
 }
 
-.userName input,
-.password input,
-.rePass input,
-.verification_code {
+.modal .userName input,
+.modal .password input,
+.modal .rePass input,
+.modal .verification_code {
     background-color: rgb(255, 255, 255);
     width: 290px;
     height: 40px;
@@ -410,31 +410,31 @@ form {
     padding: 0px 10px;
     /* box-sizing: border-box; */
     margin-bottom: 15px;
-    border: 1px solid rgb( 215, 215, 215 );
+    border: 1px solid rgb(215, 215, 215);
 }
 
-.verification {
+.modal .verification {
     overflow: hidden;
 }
 
-.verification .verification_code {
+.modal .verification .verification_code {
     width: 124px;
 }
 
-.verification input {
+.modal .verification input {
     float: left;
 }
 
-.verification>div {
+.modal .verification>div {
     float: right;
     cursor: pointer;
 }
 
-.login {
+.modal .login {
     margin-top: 10px;
 }
 
-.login input {
+.modal .login input {
     background-color: rgb(127, 169, 0);
     width: 310px;
     height: 40px;
@@ -448,37 +448,37 @@ form {
     position: relative;
 }
 
-.login input:active {
+.modal .login input:active {
     box-shadow: 0 3px 0 rgba(127, 169, 0, .5);
     top: 2px;
 }
 
-.other {
+.modal .other {
     margin-top: 20px;
 }
 
-.other p:first-child {
+.modal .other p:first-child {
     font-size: 12px;
     font-family: "Microsoft YaHei";
-    color: rgb( 66, 66, 66 );
+    color: rgb(66, 66, 66);
 }
 
 
-.other_img {
+.modal .other_img {
     margin: 10px 0;
 }
 
-.other p:last-child {
+.modal .other p:last-child {
     font-size: 12px;
     font-family: "Microsoft YaHei";
     text-align: right;
 }
 
-.other p:last-child a {
-    color: rgb( 66, 66, 66 );
+.modal .other p:last-child a {
+    color: rgb(66, 66, 66);
 }
 
-.close_btn{
+.modal .close_btn {
     position: absolute;
     top: 2px;
     right: 13px;

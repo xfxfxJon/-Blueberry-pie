@@ -5,7 +5,7 @@ $(document).ready(function () {
         if ($(this).index() == 1) {
             isLogin = false;
             $('.rePass').css("display", "block");
-            $('form').css("height", "480px");
+            $('form').css("height", "485px");
             $(".login input").val("注册");
         } else {
             isLogin = true;

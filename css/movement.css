@@ -393,6 +393,7 @@
 }
 
 .praise_imgs a {
+    color: #808080;
     float: left;
     margin-right: 15px;
 }
@@ -449,7 +450,7 @@
     padding-bottom: 50px;
 }
 
-.comments_item{
+.comments_item {
     margin-bottom: 10px;
 }
 
