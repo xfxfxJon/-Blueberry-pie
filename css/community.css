@@ -37,7 +37,7 @@
 }
 
 .character {
-    width: 925px;
+    width: 950px;
     margin-left: 40px;
     margin-top: 10px;
 }
@@ -49,6 +49,12 @@
     line-height: 2.143;
     margin-right: 12px;
     padding: 3px 5px;
+    cursor: pointer;
+}
+
+.character_top span:hover {
+    font-weight: bold;
+    color: rgb(36, 134, 117);
 }
 
 .character_top span:last-child {
@@ -61,26 +67,30 @@
     border-radius: 2px;
 }
 
+.character_top .active:hover {
+    color: #fff;
+}
+
 
 .left,
 .right {
     display: inline-block;
-    width: 8px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
     background: url("../img/left.png") no-repeat;
     position: relative;
     top: -3px;
     cursor: pointer;
     user-select: none;
+    background-position: center;
+    top: 0px;
 }
 
-.right {
-    top: -1px;
-}
-
-.right {
+.character_bottom .right {
     background: url("../img/right.png") no-repeat;
+    background-position: center;
 }
+
 
 .character_bottom span {
     font-size: 14px;
@@ -88,6 +98,11 @@
     /* color: rgb( 16, 157, 89 ); */
     color: rgb(133, 133, 133);
     padding: 0 5px;
+    cursor: pointer;
+}
+
+.character_bottom span:hover{
+    color: rgb(16, 157, 89);
 }
 
 .character_bottom .active {
