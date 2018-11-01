@@ -1,0 +1,267 @@
+.home {
+    background-color: rgb(245, 245, 245);
+}
+
+.sort {
+    background: #fff;
+    /* box-shadow: 1px 1.732px 4px 0px rgb(17, 5, 9); */
+    height: 70px;
+}
+
+.sort .container {
+    position: relative;
+}
+
+
+.sort .container>div {
+    float: left;
+}
+
+.all {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(77, 77, 77);
+    font-weight: bold;
+    line-height: 70px;
+    margin-left: 10px;
+}
+
+.down {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/down.png") no-repeat;
+    margin-left: 7px;
+    position: relative;
+    top: 3px;
+}
+
+.character {
+    width: 925px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.character_top span {
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(133, 133, 133);
+    line-height: 2.143;
+    margin-right: 12px;
+    padding: 3px 5px;
+}
+
+.character_top span:last-child {
+    margin-right: 0;
+}
+
+.character_top .active {
+    color: #fff;
+    background: rgb(36, 134, 117);
+    border-radius: 2px;
+}
+
+
+.left,
+.right {
+    display: inline-block;
+    width: 8px;
+    height: 13px;
+    background: url("../img/left.png") no-repeat;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right {
+    top: -1px;
+}
+
+.right {
+    background: url("../img/right.png") no-repeat;
+}
+
+.character_bottom span {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    /* color: rgb( 16, 157, 89 ); */
+    color: rgb(133, 133, 133);
+    padding: 0 5px;
+}
+
+.character_bottom .active {
+    color: rgb(16, 157, 89);
+}
+
+.character_bottom_center {
+    width: 900px;
+    /* overflow: hidden; */
+    white-space: nowrap;
+
+    user-select: none;
+    position: relative;
+    left: 0;
+}
+
+.character_bottom_box {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.pen {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url("../img/pen.png") no-repeat;
+    position: relative;
+    top: 2px;
+}
+
+.publish {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    border: 1px solid rgb(16, 157, 89);
+    color: rgb(16, 157, 89);
+    border-radius: 16px;
+    padding: 5px 30px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+
+.box {
+    padding-top: 20px;
+    /* position: relative; */
+}
+
+.box .container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 135px;
+}
+
+.item {
+    float: left;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1.732px 4px 0px rgb(17, 5, 9); */
+    width: 285px;
+    /* height: 377px; */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* overflow: hidden; */
+}
+
+.item:nth-child(4) {
+    margin-right: 0;
+}
+
+.item_top {
+    margin: 15px 10px;
+    overflow: hidden;
+}
+
+.item_top img {
+    float: left;
+}
+
+.author {
+    float: left;
+}
+
+.item_img,
+.item_img img {
+    width: 100%;
+    /* clear: both; */
+}
+
+.author p:nth-child(1) {
+    font-size: 14.464px;
+    font-family: "Microsoft YaHei";
+    color: rgb(19, 23, 25);
+    margin-left: 10px;
+}
+
+.author p:nth-child(2) {
+    font-size: 10.848px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 153, 153);
+    margin-left: 10px;
+}
+
+.item_bottom {
+    padding: 15px 10px;
+}
+
+.item_bottom p {
+    font-size: 12.656px;
+    font-family: "Microsoft YaHei";
+    color: rgb(77, 77, 77);
+    line-height: 1.475;
+}
+
+.item_bottom>div {
+    margin-top: 10px;
+}
+
+.zan {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../img/zan.png") no-repeat;
+    vertical-align: middle;
+}
+
+.chat {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../img/chat.png") no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.side_box {
+    background-color: rgb(16, 157, 89);
+    /* box-shadow: 1px 1.732px 4px 0px rgb( 17, 5, 9 ); */
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    width: 54px;
+    height: 240px;
+    margin-top: -120px;
+}
+
+.side_box>div {
+    margin: 20px auto 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.side_box .headset {
+    background: url("../img/headset_white.png") no-repeat;
+}
+
+.side_box .chat_white {
+    width: 20px;
+    background: url("../img/chat_white.png") no-repeat;
+}
+
+.side_box .label {
+    background: url("../img/label_white.png") no-repeat;
+}
+
+.side_box .zan_white {
+    background: url("../img/zan_white.png") no-repeat;
+}
+
+.side_box .small {
+    background: url("../img/small_white.png") no-repeat;
+}
+
+.side_box .diamond {
+    background: url("../img/diamond.png") no-repeat;
+}

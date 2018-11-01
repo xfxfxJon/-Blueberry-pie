@@ -1,0 +1,157 @@
+.home {
+    height: 880px;
+    width: 100%;
+    background: url("../img/bg.png") no-repeat;
+    overflow: hidden;
+}
+
+form {
+    border-radius: 3px;
+    background-color: rgb(5, 5, 5, .3);
+    width: 340px;
+    height: 400px;
+    margin: 180px auto 0;
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+}
+
+.rePass {
+    display: none;
+}
+
+.fun_btn {
+    margin-bottom: 15px;
+}
+
+.fun_btn::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fun_btn>div:first-child {
+    float: left;
+}
+
+.fun_btn>div:last-child {
+    float: right;
+}
+
+.fun_btn .current {
+    background-color: rgb(255, 255, 255);
+    width: 144px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 40px;
+}
+
+.fun_btn .current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 10px solid;
+    border-color: #fff transparent transparent;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.not_current {
+    background-color: rgb(230, 94, 66);
+    width: 144px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.userName {
+    clear: both;
+}
+
+.userName input,
+.password input,
+.rePass input,
+.verification_code {
+    background-color: rgb(255, 255, 255);
+    width: 290px;
+    height: 40px;
+    outline: none;
+    padding: 0px 10px;
+    /* box-sizing: border-box; */
+    margin-bottom: 15px;
+}
+
+.verification {
+    overflow: hidden;
+}
+
+.verification .verification_code {
+    width: 124px;
+}
+
+.verification input {
+    float: left;
+}
+
+.verification>div {
+    float: right;
+    cursor: pointer;
+}
+
+.login {
+    margin-top: 10px;
+}
+
+.login input {
+    background-color: rgb(127, 169, 0);
+    width: 310px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px 0 rgba(127, 169, 0, .5);
+    position: relative;
+}
+
+.login input:active {
+    box-shadow: 0 3px 0 rgba(127, 169, 0, .5);
+    top: 2px;
+}
+
+.other {
+    margin-top: 20px;
+}
+
+.other p:first-child {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: rgb(255, 255, 255);
+}
+
+.other_img {
+    margin: 10px 0;
+}
+
+.other p:last-child {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    text-align: right;
+}
+
+.other p:last-child a {
+    color: rgb(255, 255, 255);
+}
