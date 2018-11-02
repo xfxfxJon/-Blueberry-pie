@@ -90,7 +90,7 @@ $(document).ready(function () {
                         '</ul>' +
                         '</div>';
                 }
-                $(".movement_wrapper").append(str);
+                $(".movement_wrapper").html(str);
 
                 new Swiper('.swiper_movement', {
                     autoplay: {
