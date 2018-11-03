@@ -195,6 +195,26 @@ header {
     color: rgb(16, 157, 89);
 }
 
+.my_info {
+    display: none;
+}
+
+.my_info,
+.my_login {
+    margin-left: 20px;
+    line-height: 90px;
+}
+
+.my_info a,
+.my_login a {
+    color: #fff;
+}
+
+.my_info a:hover,
+.my_login a:hover {
+    color: rgb(16, 157, 89);
+}
+
 /* header end */
 
 /* footer start */

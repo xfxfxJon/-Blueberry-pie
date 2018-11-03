@@ -155,3 +155,7 @@ form {
 .other p:last-child a {
     color: rgb(255, 255, 255);
 }
+
+.register_btn{
+    display: none;
+}

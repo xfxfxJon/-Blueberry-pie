@@ -284,7 +284,7 @@ $(document).ready(function () {
     // 其它API
     function getOther(){
         $.get("http://wwtliu.com/sxtstu/blueberrypai/getIndexOther.php", function(res){
-            console.log(res);
+            // console.log(res);
             if(res.success){
                 var data = res.otherImgs;
                 var str = '';

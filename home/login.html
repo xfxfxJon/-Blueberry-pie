@@ -10,6 +10,7 @@
     <meta name="keywords" content="蓝莓派">
     <link rel="icon" href="../img/favicon.png">
     <script src="../libs/jquery/jquery-3.3.1.js"></script>
+    <script src="../libs/layer/layer.js"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -44,8 +45,8 @@
                             <img src="../img/search.png" alt="">
                         </span>
                     </div>
-                    <!-- <div><a href="login.html">登录</a></div>
-                    <div><a href="#">注册</a></div> -->
+                    <div><a href="login.html" hidden>登录</a></div>
+                    <div><a href="#" hidden>注册</a></div>
                 </div>
             </div>
         </div>
@@ -76,7 +77,8 @@
                 </div>
             </div>
             <div class="login">
-                <input type="button" value="登录">
+                <input type="button" class="login_btn" value="登录">
+                <input type="button" class="register_btn" value="注册">
             </div>
             <div class="other">
                 <p>你还可以用第三方登录</p>
